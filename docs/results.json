@@ -1,0 +1,40 @@
+{
+  "runs": 500,
+  "raw_position_rmse_m": 11.64,
+  "filter_position_rmse_m": 7.24,
+  "position_error_reduction_pct": 37.8,
+  "filter_velocity_rmse_mps": 2.32,
+  "filter_position_rmse_straight_m": 6.97,
+  "filter_position_rmse_turning_m": 7.95,
+  "raw_position_rmse_turning_m": 10.02,
+  "tuning_sweep": [
+    {
+      "accel_noise_std": 0.1,
+      "filter_position_rmse_m": 37.23
+    },
+    {
+      "accel_noise_std": 0.25,
+      "filter_position_rmse_m": 15.28
+    },
+    {
+      "accel_noise_std": 0.5,
+      "filter_position_rmse_m": 8.88
+    },
+    {
+      "accel_noise_std": 1,
+      "filter_position_rmse_m": 7.24
+    },
+    {
+      "accel_noise_std": 2,
+      "filter_position_rmse_m": 7.61
+    },
+    {
+      "accel_noise_std": 4,
+      "filter_position_rmse_m": 8.5
+    },
+    {
+      "accel_noise_std": 8,
+      "filter_position_rmse_m": 9.43
+    }
+  ]
+}
