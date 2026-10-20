@@ -60,7 +60,7 @@ If the radar misses the drone on a scan, the filter just predicts and carries on
 - **It's an extended Kalman filter.** The radar measures range and bearing, which aren't a linear function of x and y. The EKF linearises the measurement around the current estimate using its Jacobian.
 - **Angle wrapping.** Bearings of +179.9° and -179.9° are only 0.2° apart, but a naive subtraction says 359.8°. Without wrapping, a target crossing that line would be thrown across the map. There's a test for exactly this.
 - **Starting a track.** The first detection gives a position but no velocity. The starting uncertainty is converted from the radar's range and bearing noise, which makes it an ellipse stretched across the line of sight, because bearing noise matters more than range noise at these distances.
-- **Joseph-form covariance update.** It's mathematically the same as the textbook update, but keeps the covariance symmetric and positive definite despite rounding errors. That matters in a tracker that runs for hours.
+- **Joseph-form covariance update.** It's mathematically the same as the textbook update, but keeps the covariance symmetric and positive definite despite rounding errors.
 
 ## Tests
 
@@ -103,4 +103,4 @@ docs/             charts and results.json
 
 ## Author
 
-Built by [Rohan Sehmbi](https://github.com/Rokuu010).
+Built by [Rohan](https://github.com/Rokuu010).
